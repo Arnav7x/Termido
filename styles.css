@@ -1,0 +1,81 @@
+:root {
+  --bg: #0b0e14;
+  --panel: #0f131a;
+  --text: #e6edf3;
+  --muted: #9aa5b1;
+  --accent: #7aa2f7;
+  --green: #98c379;
+  --red: #e06c75;
+  --yellow: #e5c07b;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 800px at 20% 0%, rgb(255, 0, 0) 0%, #180000 70%, #000000 100%);
+  color: var(--text);
+  font: 14px/1.5 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.terminal {
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.output {
+  flex: 1;
+  white-space: pre-wrap;
+}
+
+.line { display: flex; gap: 8px; align-items: flex-start; }
+.prefix { color: var(--muted); flex: 0 0 auto; }
+.content { flex: 1 1 auto; }
+.muted { color: var(--muted); }
+.success { color: var(--green); }
+.error { color: var(--red); }
+.accent { color: var(--accent); }
+.warning { color: var(--yellow); }
+
+.prompt-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  border-top: 1px solid #1b2130;
+  padding-top: 12px;
+}
+
+.prompt { color: var(--accent); }
+
+.command-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font: inherit;
+  width: 100%;
+}
+
+.task-line { display: flex; gap: 8px; align-items: baseline; }
+.task-id { color: var(--muted); width: 3ch; text-align: right; }
+.task-title { color: var(--text); }
+.task-done .task-title { text-decoration: line-through; color: #8b949e; }
+.task-done .task-id { color: #596273; }
+
+.help {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 16px;
+}
+
+.kbd { border: 1px solid #30363d; border-bottom-width: 2px; padding: 0 4px; border-radius: 4px; color: var(--text); }
+
+

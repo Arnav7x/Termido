@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Termido</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="terminal" role="application" aria-label="Terminal TODO application">
+      <div id="output" class="output" aria-live="polite" aria-atomic="false"></div>
+      <div class="prompt-line">
+        <label for="commandInput" class="prompt" aria-hidden="true">todo&gt; </label>
+        <input id="commandInput" class="command-input" type="text" spellcheck="false" autocomplete="off" aria-label="Type a command" />
+      </div>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+  </html>
+
+
