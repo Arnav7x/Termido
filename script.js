@@ -1,4 +1,3 @@
-/* Terminal TODO - single page, no backend */
 
 (function () {
   const STORAGE_KEY = 'terminal_todo_items_v1';
