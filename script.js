@@ -207,7 +207,7 @@
 
   function boot() {
     load();
-    printInfo('Welcome to Terminal TODO. Type \u2018help\u2019.');
+    printInfo('Welcome to Termido. Type \u2018help\u2019.');
     if (tasks.length) {
       renderTasks();
     }
