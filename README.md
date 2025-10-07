@@ -1,6 +1,6 @@
 # Termido
 
-A light terminal‑style todo manager that runs entirely in your browser. No build step, no backend, no dependencies — just open the page and start typing.
+A lightweight, terminal‑style todo manager that runs entirely in your browser. No build step, no backend, no dependencies — just open the page and start typing.
 
 ### Features
 - **Terminal UI**: Type commands like `add`, `list`, `done`, and more.
